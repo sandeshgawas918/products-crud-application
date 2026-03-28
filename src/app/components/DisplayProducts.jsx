@@ -51,7 +51,7 @@ function DisplayProducts() {
                 }
             ]
         }
-        setallProducts([...allProducts, newProduct])
+        setallProducts([newProduct,...allProducts ])
         console.log('added')
     }
 
@@ -97,7 +97,7 @@ function DisplayProducts() {
                 <button onClick={() => { setpageNo(3) }} className='bg-gray-500 text-white p-3 rounded-full px-5'>3</button>
                 <button onClick={() => { setpageNo(4) }} className='bg-gray-500 text-white p-3 rounded-full px-5'>4</button>
             </div>
-            <table className=' border mt-3 mx-5 '>
+            <table className=' border mt-3 mx-5'>
                 <thead className=' border p-5'>
                     <tr className=' border p-5'>
                         <th className=' border p-5'>Id</th>
